@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin-top: 0.5%;
+}
+body{
+    background-color: rgb(37, 83, 88);
+}
+
+.button-grid{
+    height: 80vh;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.button{
+    display: grid;
+    background-color: #c4dce7;
+    color: red;
+    margin: 5px;
+    font-size: 2rem;
+    border-radius: 7%;
+}
+.button:hover{
+    box-shadow: inset 0px 0px 0px 4px rgb(199, 17, 17);
+    box-sizing: border-box;
+}
+.p{
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+.pink{
+    background-color: pink;
+}
+.green{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white;
+}
+.purple{
+    background-color: blueviolet;
+}
+.orange{
+    background-color: orange;
+}
+.red{
+    background-color: red;
+}
+.cyan{
+    background-color: rgb(0, 170, 255);
+}
+.yellow{
+    background-color: yellow;
+}
+.hide{
+    background-color: #c4dce7; 
+}
+.button.disable{
+    cursor:default;
+}
+.button.disable:hover{
+    cursor: default;
+    box-shadow: none;
+    box-sizing: none;
+}
+#tries{
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+}
+.styletries{
+    margin-left: 48%;
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(44, 197, 44);
+}
+#matches{
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+.youwin{
+    font-size: 2rem;
+    color: white;
+    margin-left: 37%;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.stylescore{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 10%;
+}
+.hidee{
+    display: none;
+}
+.playagain{
+    margin-left: 45%;
+    background-color: green;
+    color: white;
+}
+.hiddenn{
+    display: none;
+}
+.congrats{
+    margin-left: 39%;
+    color: burlywood;
+}
+.hide2{
+    display: none;
+}
+.squares{
+    margin-top: 2%;
+}
+.scoreno{
+    margin-left: 1.5%;
+}
