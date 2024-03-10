@@ -51,7 +51,7 @@ function buttonClick(event){
             console.log(secondClick.className);
             matches+=1;
             updateMatches();
-            if (matches===1){
+            if (matches===10){
                 var hidden= document.getElementsByClassName("youwin")[0];
                 var hidden1 = document.getElementsByClassName("youwin")[1];
                 console.log(hidden);
