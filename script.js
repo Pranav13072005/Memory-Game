@@ -14,14 +14,23 @@ function updateMatches() {
     document.getElementById("matches").innerHTML = matches;
 }
 function updateScore(){
-    document.getElementById("score").innerHTML = (matches/count)*100;
+    document.getElementById("score").innerHTML = truncateNumber((matches/count)*100, 2);
 }
-
+function truncateNumber(num, decimalPlaces) {
+    return parseFloat(num.toFixed(decimalPlaces));
+}
+function playAgain(event){
+    location.reload();
+}
 function buttonClick(event){
     const secondClick=event.target;
+    
+    console.log(secondClick);
     if (secondClick.className.includes('disable') || preventClick){
         return;
     }
+    secondClick.textContent="";
+    secondClick.className+=" flip";
     secondClick.className=secondClick.className.replace('hide','');
     if(n==0){
         clickedCard=secondClick;
@@ -65,16 +74,26 @@ function buttonClick(event){
             console.log('colors are not matching');
             preventClick=true;
             setTimeout(() => {
-                secondClick.className=secondClick.className.replace('disable','');
-                secondClick.className+='hide';
-                clickedCard.className=clickedCard.className.replace('disable','');
-                clickedCard.className+='hide';
+                secondClick.className+=' vibrate';
+                clickedCard.className+=' vibrate';
+            }, 300);
+            setTimeout(() => {
                 preventClick=false;
-            }, 500);
-          
+                secondClick.className=secondClick.className.replace('disable','');
+                secondClick.className+=' hide';
+                secondClick.className=secondClick.className.replace('vibrate','');
+                secondClick.className=secondClick.className.replace('flip','');
+                clickedCard.className=clickedCard.className.replace('disable','');
+                clickedCard.className+=' hide';
+                clickedCard.className=clickedCard.className.replace('vibrate','');
+                clickedCard.className=clickedCard.className.replace('flip','');
+                secondClick.textContent="?";
+                clickedCard.textContent="?";
+            }, 800);
        }
         n=0;
     }
+    
 }
 document.addEventListener('DOMContentLoaded', function() {
 
