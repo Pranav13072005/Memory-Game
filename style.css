@@ -188,3 +188,15 @@ body{
 .hide{
     background-color: #c4dce7; 
 }
+@media screen and (max-width: 650px){
+    .button-grid{
+        height: 185vh;
+        width: 50%;
+        margin-top: 2%;
+        margin-left: 25%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }  
+}
