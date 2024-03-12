@@ -119,17 +119,17 @@ body{
     margin-top: 7%;
     font-size: 4rem;
     color: white;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
 .hidee{
     display: none;
 }
 .playagain{
-    margin-left: 48%;
+    margin-left: 46%;
     background-color: rgb(12, 176, 12);
     color: white;
-    width: 6%;
-    height: 100%;
+    width: 8%;
+    height: 6vh;
     border-radius: 8px;
     margin-bottom: 5%;
 }
@@ -143,9 +143,9 @@ body{
 .hide2{
     display: none;
 }
-.squares{
+/*.squares{
     margin-top: 2%;
-}
+}*/
 .scoreno{
     margin-left: 1.5%;
 }
