@@ -85,23 +85,31 @@ body{
     box-shadow: none;
     box-sizing: none;
 }
+#summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #tries{
     font-size: 2rem;
-    display: inline-flex;
-    justify-content: center;
+    display: inline-flex !important;
     color: white;
 }
 .styletries{
-    margin-left: 48%;
+    /*margin-left: 45%;*/
     font-size: 2rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    /*display: inline-flex;
+    justify-content: center;
+    align-items: center;*/
     color: rgb(44, 197, 44);
 }
 #matches{
     font-size: 2rem;
-    display: inline-flex;
+    display: inline-flex !important;
     justify-content: center;
     color: white;
 }
